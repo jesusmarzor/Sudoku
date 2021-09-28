@@ -4,8 +4,15 @@
 Una vez descargado el proyecto, para ejecutarlo necesitas tener instalado [sfml](https://www.sfml-dev.org/download.php)
 
 ## Iniciar
-Ya instalado tenemos que situarnos en la raiz del proyecto y ejecutar:
+
+Siempre que modificas el código, deberas ejecutar:
 
 ```
-make && ./Sudoku
+make
+```
+
+Una vez ejecutado make o si no modificas el código, deberas ejecutar:
+
+```
+./Sudoku
 ```
