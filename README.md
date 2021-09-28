@@ -7,5 +7,5 @@ Una vez descargado el proyecto, para ejecutarlo necesitas tener instalado [sfml]
 Ya instalado tenemos que situarnos en la raiz del proyecto y ejecutar:
 
 ```
-make && ./make
+make && ./Sudoku
 ```
