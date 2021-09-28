@@ -1,0 +1,226 @@
+\hypertarget{classBoard}{}\doxysection{Board Class Reference}
+\label{classBoard}\index{Board@{Board}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoard_a8d7885e01c6a967eb504d6f90960b1a4}{Board}} (int nrows, int ncols, int size)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase que crea el tablero. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_aaa8ae99fdaecb29f3889e356bb33be2d}{draw}} (sf\+::\+Render\+Window \&windows)
+\begin{DoxyCompactList}\small\item\em Dibujar el tablero en pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_aa776acfb01314001ecc315505244b33e}{action}} (int posx, int posy)
+\begin{DoxyCompactList}\small\item\em Mover el current. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoard_a737c0ecdabeccd0460bcbae2f8ac6c44}{$\sim$\+Board}} (void)
+\begin{DoxyCompactList}\small\item\em Liberar de memoria celdas y punteros. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_ae57f2cd5fb5bd7e20271c3b9b084b429}{derecha}} ()
+\begin{DoxyCompactList}\small\item\em Mover el current a la derecha con el teclado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_af4e5ca0e7ceb6f7dbf4f22f9d3dbbb76}{izquierda}} ()
+\begin{DoxyCompactList}\small\item\em Mover el current a la izquierda con el teclado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_a2ff10e98ce27101524f5063de6b9ef4a}{arriba}} ()
+\begin{DoxyCompactList}\small\item\em Mover el current arriba con el teclado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_a7ff462189dd24355a0881c7afea80247}{abajo}} ()
+\begin{DoxyCompactList}\small\item\em Mover el current abajo con el teclado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_a23b49961f9eb0b1331690aa024f5b845}{cargar\+Phases}} ()
+\begin{DoxyCompactList}\small\item\em Cargar las fases del Sudoku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_a5dd4ecd48d60592838763b8b251fb99f}{escribir}} (int posx, int posy)
+\begin{DoxyCompactList}\small\item\em Escribir un numero del 1 al 9 en los cuadros libres. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a98d6afedf177acbfd1467a0742d4417d}{comprobar\+Valor}} (int posx, int posy)
+\begin{DoxyCompactList}\small\item\em Comprobar si el numero es valido o no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBoard_a8d7885e01c6a967eb504d6f90960b1a4}\label{classBoard_a8d7885e01c6a967eb504d6f90960b1a4}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}\item[{int}]{nrows,  }\item[{int}]{ncols,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase que crea el tablero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nrows} & Numero de filas del tablero \\
+\hline
+{\em ncols} & Numero de columnas del tablero \\
+\hline
+{\em size} & Tamaño de la ventana \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Tablero 9x9 creado correctamente 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classBoard_a737c0ecdabeccd0460bcbae2f8ac6c44}\label{classBoard_a737c0ecdabeccd0460bcbae2f8ac6c44}} 
+\index{Board@{Board}!````~Board@{$\sim$Board}}
+\index{````~Board@{$\sim$Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{$\sim$Board()}{~Board()}}
+{\footnotesize\ttfamily Board\+::$\sim$\+Board (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Liberar de memoria celdas y punteros. 
+
+\begin{DoxyPostcond}{Postcondition}
+Memoria liberada 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBoard_a7ff462189dd24355a0881c7afea80247}\label{classBoard_a7ff462189dd24355a0881c7afea80247}} 
+\index{Board@{Board}!abajo@{abajo}}
+\index{abajo@{abajo}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{abajo()}{abajo()}}
+{\footnotesize\ttfamily void Board\+::abajo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mover el current abajo con el teclado. 
+
+\begin{DoxyPostcond}{Postcondition}
+Mover el current al pixel que corresponde 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classBoard_aa776acfb01314001ecc315505244b33e}\label{classBoard_aa776acfb01314001ecc315505244b33e}} 
+\index{Board@{Board}!action@{action}}
+\index{action@{action}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily void Board\+::action (\begin{DoxyParamCaption}\item[{int}]{posx,  }\item[{int}]{posy }\end{DoxyParamCaption})}
+
+
+
+Mover el current. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posx} & Posicion x en la ventana(pixel) \\
+\hline
+{\em posy} & Posicion y en la ventana(pixel) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Mover el current al pixel que corresponde 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classBoard_a2ff10e98ce27101524f5063de6b9ef4a}\label{classBoard_a2ff10e98ce27101524f5063de6b9ef4a}} 
+\index{Board@{Board}!arriba@{arriba}}
+\index{arriba@{arriba}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{arriba()}{arriba()}}
+{\footnotesize\ttfamily void Board\+::arriba (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mover el current arriba con el teclado. 
+
+\begin{DoxyPostcond}{Postcondition}
+Mover el current al pixel que corresponde 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classBoard_a23b49961f9eb0b1331690aa024f5b845}\label{classBoard_a23b49961f9eb0b1331690aa024f5b845}} 
+\index{Board@{Board}!cargarPhases@{cargarPhases}}
+\index{cargarPhases@{cargarPhases}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{cargarPhases()}{cargarPhases()}}
+{\footnotesize\ttfamily void Board\+::cargar\+Phases (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cargar las fases del Sudoku. 
+
+\begin{DoxyPostcond}{Postcondition}
+Fases cargadas 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classBoard_a98d6afedf177acbfd1467a0742d4417d}\label{classBoard_a98d6afedf177acbfd1467a0742d4417d}} 
+\index{Board@{Board}!comprobarValor@{comprobarValor}}
+\index{comprobarValor@{comprobarValor}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{comprobarValor()}{comprobarValor()}}
+{\footnotesize\ttfamily bool Board\+::comprobar\+Valor (\begin{DoxyParamCaption}\item[{int}]{posx,  }\item[{int}]{posy }\end{DoxyParamCaption})}
+
+
+
+Comprobar si el numero es valido o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posx} & Posicion x en el tablero \\
+\hline
+{\em posy} & Posicion y en el tablero \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em True} & si el numero es valido \\
+\hline
+{\em False} & si el numero no es valido \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyPrecond}{Precondition}
+posx debe ser mayor o igual a 0 y menor o igual a 9 
+
+posy debe ser mayor o igual a 0 y menor o igual a 9 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classBoard_ae57f2cd5fb5bd7e20271c3b9b084b429}\label{classBoard_ae57f2cd5fb5bd7e20271c3b9b084b429}} 
+\index{Board@{Board}!derecha@{derecha}}
+\index{derecha@{derecha}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{derecha()}{derecha()}}
+{\footnotesize\ttfamily void Board\+::derecha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mover el current a la derecha con el teclado. 
+
+\begin{DoxyPostcond}{Postcondition}
+Mover el current al pixel que corresponde 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classBoard_aaa8ae99fdaecb29f3889e356bb33be2d}\label{classBoard_aaa8ae99fdaecb29f3889e356bb33be2d}} 
+\index{Board@{Board}!draw@{draw}}
+\index{draw@{draw}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Board\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{windows }\end{DoxyParamCaption})}
+
+
+
+Dibujar el tablero en pantalla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em windows} & La ventana del juego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Toda la ventana dibujada 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classBoard_a5dd4ecd48d60592838763b8b251fb99f}\label{classBoard_a5dd4ecd48d60592838763b8b251fb99f}} 
+\index{Board@{Board}!escribir@{escribir}}
+\index{escribir@{escribir}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily void Board\+::escribir (\begin{DoxyParamCaption}\item[{int}]{posx,  }\item[{int}]{posy }\end{DoxyParamCaption})}
+
+
+
+Escribir un numero del 1 al 9 en los cuadros libres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posx} & Posicion en x el tablero \\
+\hline
+{\em posy} & Posicion en y el tablero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Numero introducido correctamente 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classBoard_af4e5ca0e7ceb6f7dbf4f22f9d3dbbb76}\label{classBoard_af4e5ca0e7ceb6f7dbf4f22f9d3dbbb76}} 
+\index{Board@{Board}!izquierda@{izquierda}}
+\index{izquierda@{izquierda}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{izquierda()}{izquierda()}}
+{\footnotesize\ttfamily void Board\+::izquierda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mover el current a la izquierda con el teclado. 
+
+\begin{DoxyPostcond}{Postcondition}
+Mover el current al pixel que corresponde 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Sudoku_8h}{Sudoku.\+h}}\item 
+\mbox{\hyperlink{Sudoku_8cpp}{Sudoku.\+cpp}}\end{DoxyCompactItemize}
