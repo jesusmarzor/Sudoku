@@ -27,4 +27,4 @@ Una vez ejecutado *make* o si no modificas el código, deberas ejecutar:
 - [Linkedin](https://www.linkedin.com/in/jesusmarzor/)
 
 ## Licencia 📄
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE) para detalles
+Este proyecto está bajo la Licencia (GNU General Public License v3.0) - mira el archivo [LICENSE](LICENSE) para detalles
